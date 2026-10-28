@@ -1,0 +1,256 @@
+{
+  "id": "V4",
+  "geometry_source": "assumed_parameterized_geometry_anchored_to_DSJ100_63_2x75",
+  "solid_geometry": [
+    {
+      "id": "belt_deck",
+      "lower": [
+        0.5,
+        -0.5,
+        0.94
+      ],
+      "upper": [
+        4.5,
+        0.5,
+        1.0
+      ],
+      "status": "ASSUMED_GEOMETRY",
+      "geometry_source": "assumed_parameterized_geometry_anchored_to_DSJ100_63_2x75",
+      "derivation_rule": "width from public belt; flat slab, axial span/elevation/thickness assumed"
+    },
+    {
+      "id": "left_side",
+      "lower": [
+        0.5,
+        -0.62,
+        0.85
+      ],
+      "upper": [
+        4.5,
+        -0.5,
+        1.08
+      ],
+      "status": "ASSUMED_GEOMETRY",
+      "geometry_source": "assumed_parameterized_geometry_anchored_to_DSJ100_63_2x75",
+      "derivation_rule": "parameterized longitudinal structural side"
+    },
+    {
+      "id": "right_side",
+      "lower": [
+        0.5,
+        0.5,
+        0.85
+      ],
+      "upper": [
+        4.5,
+        0.62,
+        1.08
+      ],
+      "status": "ASSUMED_GEOMETRY",
+      "geometry_source": "assumed_parameterized_geometry_anchored_to_DSJ100_63_2x75",
+      "derivation_rule": "parameterized longitudinal structural side"
+    },
+    {
+      "id": "crossmember_1",
+      "lower": [
+        0.69,
+        -0.62,
+        0.75
+      ],
+      "upper": [
+        0.81,
+        0.62,
+        0.85
+      ],
+      "status": "ASSUMED_GEOMETRY",
+      "geometry_source": "assumed_parameterized_geometry_anchored_to_DSJ100_63_2x75",
+      "derivation_rule": "support station and beam dimensions from assumed parameters"
+    },
+    {
+      "id": "leg_1_-1",
+      "lower": [
+        0.71,
+        -0.6000000000000001,
+        0.0
+      ],
+      "upper": [
+        0.79,
+        -0.52,
+        0.75
+      ],
+      "status": "ASSUMED_GEOMETRY",
+      "geometry_source": "assumed_parameterized_geometry_anchored_to_DSJ100_63_2x75",
+      "derivation_rule": "six parameterized legs; not manufacturer measurements"
+    },
+    {
+      "id": "leg_1_+1",
+      "lower": [
+        0.71,
+        0.52,
+        0.0
+      ],
+      "upper": [
+        0.79,
+        0.6000000000000001,
+        0.75
+      ],
+      "status": "ASSUMED_GEOMETRY",
+      "geometry_source": "assumed_parameterized_geometry_anchored_to_DSJ100_63_2x75",
+      "derivation_rule": "six parameterized legs; not manufacturer measurements"
+    },
+    {
+      "id": "crossmember_2",
+      "lower": [
+        2.44,
+        -0.62,
+        0.75
+      ],
+      "upper": [
+        2.56,
+        0.62,
+        0.85
+      ],
+      "status": "ASSUMED_GEOMETRY",
+      "geometry_source": "assumed_parameterized_geometry_anchored_to_DSJ100_63_2x75",
+      "derivation_rule": "support station and beam dimensions from assumed parameters"
+    },
+    {
+      "id": "leg_2_-1",
+      "lower": [
+        2.46,
+        -0.6000000000000001,
+        0.0
+      ],
+      "upper": [
+        2.54,
+        -0.52,
+        0.75
+      ],
+      "status": "ASSUMED_GEOMETRY",
+      "geometry_source": "assumed_parameterized_geometry_anchored_to_DSJ100_63_2x75",
+      "derivation_rule": "six parameterized legs; not manufacturer measurements"
+    },
+    {
+      "id": "leg_2_+1",
+      "lower": [
+        2.46,
+        0.52,
+        0.0
+      ],
+      "upper": [
+        2.54,
+        0.6000000000000001,
+        0.75
+      ],
+      "status": "ASSUMED_GEOMETRY",
+      "geometry_source": "assumed_parameterized_geometry_anchored_to_DSJ100_63_2x75",
+      "derivation_rule": "six parameterized legs; not manufacturer measurements"
+    },
+    {
+      "id": "crossmember_3",
+      "lower": [
+        4.19,
+        -0.62,
+        0.75
+      ],
+      "upper": [
+        4.31,
+        0.62,
+        0.85
+      ],
+      "status": "ASSUMED_GEOMETRY",
+      "geometry_source": "assumed_parameterized_geometry_anchored_to_DSJ100_63_2x75",
+      "derivation_rule": "support station and beam dimensions from assumed parameters"
+    },
+    {
+      "id": "leg_3_-1",
+      "lower": [
+        4.21,
+        -0.6000000000000001,
+        0.0
+      ],
+      "upper": [
+        4.29,
+        -0.52,
+        0.75
+      ],
+      "status": "ASSUMED_GEOMETRY",
+      "geometry_source": "assumed_parameterized_geometry_anchored_to_DSJ100_63_2x75",
+      "derivation_rule": "six parameterized legs; not manufacturer measurements"
+    },
+    {
+      "id": "leg_3_+1",
+      "lower": [
+        4.21,
+        0.52,
+        0.0
+      ],
+      "upper": [
+        4.29,
+        0.6000000000000001,
+        0.75
+      ],
+      "status": "ASSUMED_GEOMETRY",
+      "geometry_source": "assumed_parameterized_geometry_anchored_to_DSJ100_63_2x75",
+      "derivation_rule": "six parameterized legs; not manufacturer measurements"
+    }
+  ],
+  "domain": [
+    [
+      0.0,
+      -2.65,
+      0.0
+    ],
+    [
+      6.0,
+      2.65,
+      3.5
+    ]
+  ],
+  "target": [
+    [
+      0.5,
+      -2.4,
+      0.25
+    ],
+    [
+      5.5,
+      2.4,
+      3.25
+    ]
+  ],
+  "mounting": {
+    "axial_range": [
+      0.2,
+      0.8
+    ],
+    "left_y": -2.57,
+    "right_y": 2.57,
+    "side_z_range": [
+      0.25,
+      3.25
+    ],
+    "roof_z": 3.38,
+    "roof_y_range": [
+      -2.4,
+      2.4
+    ],
+    "min_spacing": 0.3,
+    "clearance": 0.05,
+    "status": "ASSUMED_GEOMETRY",
+    "surface_meaning": "offset nozzle centres on hypothetical brackets, not literal wall penetration"
+  },
+  "forbidden_mounting_regions": [],
+  "forbidden_note": "No separately assumed exclusion boxes; solids + clearance and mounting ranges provide restrictions. Service corridor is not removed from target.",
+  "moving_belt": false,
+  "belt_speed_background_mps": 2.0,
+  "nominal_geometry_id": "DSJ100_63_2x75_literature_v1",
+  "rigid_translation_m": [
+    -0.5,
+    0,
+    0
+  ],
+  "confirmation_role": "PREDECLARED_INDEPENDENT_EQUIPMENT_POSITION_SCENE",
+  "source_geometry_sha256": "b64a3488d2dd1f624a2c4758c48ac2bf1b54a0f093a64afabde42c19b8d6e62d",
+  "no_coverage_used_for_scene_selection": true
+}

@@ -1,0 +1,236 @@
+{
+  "source_baseline": "C001",
+  "historical_E002_excluded": true,
+  "scenes": {
+    "V1": [
+      0,
+      0.5,
+      0
+    ],
+    "V2": [
+      0,
+      -0.5,
+      0
+    ],
+    "V3": [
+      0.5,
+      0,
+      0
+    ],
+    "V4": [
+      -0.5,
+      0,
+      0
+    ]
+  },
+  "pairs": [
+    {
+      "pair_id": "P12",
+      "nozzle_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "pair_id": "P13",
+      "nozzle_indices": [
+        0,
+        2
+      ]
+    },
+    {
+      "pair_id": "P14",
+      "nozzle_indices": [
+        0,
+        3
+      ]
+    },
+    {
+      "pair_id": "P15",
+      "nozzle_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "pair_id": "P16",
+      "nozzle_indices": [
+        0,
+        5
+      ]
+    },
+    {
+      "pair_id": "P23",
+      "nozzle_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "pair_id": "P24",
+      "nozzle_indices": [
+        1,
+        3
+      ]
+    },
+    {
+      "pair_id": "P25",
+      "nozzle_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "pair_id": "P26",
+      "nozzle_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "pair_id": "P34",
+      "nozzle_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "pair_id": "P35",
+      "nozzle_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "pair_id": "P36",
+      "nozzle_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "pair_id": "P45",
+      "nozzle_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "pair_id": "P46",
+      "nozzle_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "pair_id": "P56",
+      "nozzle_indices": [
+        4,
+        5
+      ]
+    }
+  ],
+  "R2": {
+    "uv_fraction": 0.15,
+    "yaw_deg": 30,
+    "pitch_deg": 25,
+    "surface_change": true,
+    "rule": "Intersect C001-centered intervals with full bounds; selected surface categories allowed; unselected full 5-variable blocks exactly C001. Inherited PSO bounds/clipping is retained. No additional repair clipping or resampling."
+  },
+  "stageA": {
+    "particles": 8,
+    "updates": 1,
+    "seeds": 2
+  },
+  "stageB": {
+    "particles": 8,
+    "updates": 16,
+    "seeds": 8
+  },
+  "K6": {
+    "name": "K6_WARM_FULL",
+    "particles": 10,
+    "updates": 24,
+    "seeds": 8,
+    "initialization": "particle0 exact C001; remaining global feasible random layouts"
+  },
+  "bootstrap": {
+    "repetitions": 10000,
+    "unit": "8 paired optimizer search seeds after averaging 5 shared physical seeds",
+    "interval": "percentile 2.5/97.5%, numpy linear quantiles",
+    "same_resample_indices_for_paired_contrasts": true
+  },
+  "representative_rule": {
+    "scenes": [
+      "V1",
+      "V2",
+      "V3",
+      "V4"
+    ],
+    "optimizer_seed": 2026101201,
+    "physical_seed": 2026101401,
+    "K2": "P0-selected primary endpoint for that seed",
+    "K6": "endpoint for same optimizer seed",
+    "selection_independent_of_P4_or_visual_appearance": true
+  },
+  "coverage_results_seen": 0,
+  "scene_gate": {
+    "mean_gain_pp_ge": 0.5,
+    "positive_optimizer_seeds_ge": 6,
+    "positive_physical_seeds_per_layout_ge": 4,
+    "optimizer_seeds_meeting_physical_rule_ge": 6,
+    "bootstrap95_lower_gt": 0,
+    "strict_positive_tolerance": 0
+  },
+  "overall_gate": {
+    "priority": [
+      "INCONCLUSIVE",
+      "SPARSE_RECONFIGURATION_CONFIRMED",
+      "SPARSE_RECONFIGURATION_CONDITIONAL",
+      "SPARSE_RECONFIGURATION_NOT_CONFIRMED"
+    ],
+    "inconclusive": "Any invalid geometry/baseline, incomplete primary endpoint/terminal data, budget interruption, numerical failure or severe scene fidelity mismatch",
+    "confirmed": "support>=3 and no scene mean gain<=-0.50 pp",
+    "conditional": "support==2 or (support>=3 and any scene mean gain<=-0.50 pp)",
+    "not_confirmed": "complete valid data, no severe fidelity flag and support<=1",
+    "directional_dependence": "secondary description only; never overrides support-count Gate"
+  },
+  "fidelity": {
+    "unit": "24 distinct endpoint identities per scene (3 pairs x 8 optimizer seeds), even when layouts coincide",
+    "P0_vs_P4": "archived P0 direct search best versus same-layout five-seed P4 mean",
+    "rank_ties": "Exact ties broken solely by frozen endpoint ID; ordinal ranks for Spearman",
+    "top25_count": 6,
+    "spearman_lt": 0.5,
+    "top25_recall_lt": 0.5,
+    "loss_threshold_pp_gt": 1.0,
+    "loss_paired_SE_multiplier_gt": 2.0,
+    "severe_loss_optimizer_seeds_ge": 6,
+    "paired_SE": "sample SD of five same-physical-seed differences divided by sqrt(5)",
+    "severe": "All three criteria simultaneously; any scene severe makes overall INCONCLUSIVE",
+    "undefined": "If scores constant or metrics undefined: DIAGNOSTIC_NOT_EVALUABLE, no automatic severe label",
+    "no_P4_primary_reselection": true
+  },
+  "rollback": {
+    "flag_rate_gt": 0.2,
+    "denominator": "particle proposals passed through original repair, excluding initialization draws",
+    "per_run": true,
+    "per_configuration": "pooled proposals by scene/pair/phase across declared seeds",
+    "reasons": [
+      "frozen_parameter_changed",
+      "selected_radius_violation",
+      "scene_engineering_constraint"
+    ],
+    "flag_changes_gate": false,
+    "no_adaptive_method_change": true
+  },
+  "selection": {
+    "StageA": "descending median of two per-run P0 bests, then descending maximum best, then ascending pair ID; exact ties",
+    "primary_K2": "highest endpoint P0 search best among same-scene same-seed selected three pairs; exact ties lower pair ID; freeze all before any P4",
+    "K6": "per-run best incumbent including initial C001",
+    "terminal": "All 132 scene endpoints x5 physical seeds, plus five shared EMPTY C001 calls; no deduplication that omits declared endpoint evaluations"
+  },
+  "frozen_utc": "2026-09-21T04:23:54.601637+00:00",
+  "physical_calls_before_freeze": 0,
+  "scene_manifest_sha256": "3177862275b6f9e481b010b333713ff13d60c92da87669684dbcd35a874d279f",
+  "seeds_sha256": "048eaf06e2779085af72364fd03619492765cb9fd844622fcbdfa5196b5c923b"
+}

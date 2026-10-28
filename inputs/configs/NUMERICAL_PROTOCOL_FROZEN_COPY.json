@@ -1,0 +1,393 @@
+{
+  "protocol_id": "STEP5B_event_binary_occupancy_v1",
+  "status": "FROZEN_AFTER_NUMERICAL_GATE",
+  "frozen_utc": "2026-09-20T08:22:24.022498+00:00",
+  "model_version": "trajectory_aabb_dda_freevolume_v2.0_step5b_event_v1",
+  "SEARCH_EVALUATOR": {
+    "fidelity": "P0",
+    "voxel_edge_m": 0.1,
+    "parcels_per_nozzle": 200,
+    "grid_shape": [
+      60,
+      53,
+      35
+    ],
+    "runtime": {
+      "median_wall_s": 1.2182986999999983,
+      "min_wall_s": 0.999687300000005,
+      "max_wall_s": 1.5310295000000025
+    },
+    "rank_diagnostics": {
+      "scope": "preselected_reference_12",
+      "candidate": "P0",
+      "reference": "REF",
+      "n": 12,
+      "spearman": 1.0,
+      "kendall_tau_b": 0.9999999999999998,
+      "top25_recall": 1.0,
+      "top3_overlap": 1.0,
+      "predicted_best_reference_rank": 1.0,
+      "predicted_best_id": "D02",
+      "reference_best_id": "D02",
+      "pairwise_accuracy": 1.0
+    }
+  },
+  "TERMINAL_EVALUATOR": {
+    "fidelity": "P4",
+    "voxel_edge_m": 0.04,
+    "parcels_per_nozzle": 800,
+    "grid_shape": [
+      150,
+      133,
+      88
+    ],
+    "runtime": {
+      "median_wall_s": 9.740771399999971,
+      "min_wall_s": 7.892245100000082,
+      "max_wall_s": 14.397210599999994
+    },
+    "rank_diagnostics": {
+      "scope": "preselected_reference_12",
+      "candidate": "P4",
+      "reference": "REF",
+      "n": 12,
+      "spearman": 1.0,
+      "kendall_tau_b": 0.9999999999999998,
+      "top25_recall": 1.0,
+      "top3_overlap": 1.0,
+      "predicted_best_reference_rank": 1.0,
+      "predicted_best_id": "D02",
+      "reference_best_id": "D02",
+      "pairwise_accuracy": 1.0
+    }
+  },
+  "REFERENCE_DIAGNOSTIC": {
+    "fidelity": "REF",
+    "voxel_edge_m": 0.025,
+    "parcels_per_nozzle": 1600,
+    "layout_ids": [
+      "D01",
+      "D02",
+      "D03",
+      "D04",
+      "D05",
+      "D07",
+      "D09",
+      "D11",
+      "D14",
+      "D17",
+      "D20",
+      "D23"
+    ]
+  },
+  "event_termination": {
+    "hard_horizon_s": 12,
+    "extension_s": 16,
+    "active_volume_fraction_lt": 0.005,
+    "extension_absolute_coverage_change_lt": 0.002,
+    "extension_relative_coverage_change_lt": 0.02,
+    "extension_rule": "at least one change criterion; both horizons must satisfy active-volume tolerance",
+    "whole_layout_early_stop": false
+  },
+  "incomplete_result": "Reject as HORIZON_INCOMPLETE; never optimize an incomplete evaluation",
+  "numerical": {
+    "max_dt_s": 0.002,
+    "adaptive_stability": 0.2,
+    "drag_gravity": "unchanged inherited equations",
+    "volume_weights": "equal represented liquid volume under volume-CDF sampling, NOT diameter cubed",
+    "sampling": "3-dimensional randomized stratified LHS for volume quantile, cone solid-angle cosine and azimuth; same sample per nozzle at fixed fidelity and physical seed",
+    "true_domain_boundary": "partial end voxels permitted; geometry never padded"
+  },
+  "physical_seed_policy": {
+    "search_CRN_seed": 2026092007,
+    "repeat_probe_seeds": [
+      2026092101,
+      2026092102,
+      2026092103
+    ],
+    "smoke_terminal_seeds": [
+      2026092301,
+      2026092302,
+      2026092303
+    ],
+    "formal_stage": "freeze fresh search/terminal physical seeds and new ledger before future evaluation; terminal independent of search; never change the sampling method"
+  },
+  "coverage_definition": "sum of free-target intersection volumes of positively visited voxels divided by total free target volume; binary trajectory support, no smoothing or extra hit threshold",
+  "physical_inputs": {
+    "name": "Spraying Systems GG3 (FC59), single-fluid full-cone nozzle",
+    "cone_angle_deg": 60.0,
+    "initial_speed_mps": 24.3,
+    "pressure_bar": 6.0,
+    "pressure_MPa": 0.6,
+    "flow_rate_L_min": 2.93,
+    "orifice_mm": 1.6,
+    "velocity_definition": "theoretical exit velocity; not measured downstream velocity",
+    "flow_role": "Metadata and equal-volume parcel bookkeeping; occupancy metric has no mass-flux threshold"
+  },
+  "diameter_distribution": {
+    "distribution": "volume_weighted_lognormal",
+    "diameter_reference_unit": "um",
+    "mu_ln": 4.494815888143523,
+    "sigma_ln": 0.6099613999021269,
+    "mu_ln_m": -9.32069466982075,
+    "fitting_rule": "Unweighted least squares of ln(Dv_p) = mu + sigma*Phi^-1(p), p=0.1,0.5,0.9; no moment matching or tuning",
+    "measured_quantiles_um": [
+      40,
+      94,
+      191
+    ],
+    "q_check": [
+      {
+        "probability": 0.1,
+        "measured_um": 40,
+        "fitted_um": 40.98142442261115,
+        "error_um": 0.9814244226111484,
+        "relative_error_pct": 2.4535610565278754
+      },
+      {
+        "probability": 0.5,
+        "measured_um": 94,
+        "fitted_um": 89.55167994123315,
+        "error_um": -4.448320058766853,
+        "relative_error_pct": -4.732255381666861
+      },
+      {
+        "probability": 0.9,
+        "measured_um": 191,
+        "fitted_um": 195.68630161796833,
+        "error_um": 4.686301617968326,
+        "relative_error_pct": 2.45356105652792
+      }
+    ],
+    "D32_um": 74.35042829828059,
+    "D43_um": 107.86089016359462,
+    "measured_D32_um": 75,
+    "measured_D43_um": 111,
+    "volume_tail_above_500_um": 0.002404852308366845,
+    "volume_tail_below_1_um": 8.594541117319675e-14,
+    "truncation": null,
+    "representation_status": "NUMERICAL_REPRESENTATION",
+    "measurement_plane_mm": 500,
+    "injection_spectrum_transfer": "ASSUMED: spectrum measured at 500 mm imposed at injection; no measured breakup model",
+    "sampling": "Independent randomized stratification per diameter/cone-angle/azimuth dimension; inverse normal CDF; equal represented liquid volume per parcel",
+    "interpretation": "Trajectory occupancy proxy is neither number concentration nor dust capture efficiency"
+  },
+  "wind_mps": [
+    1,
+    0,
+    0
+  ],
+  "domain_m": [
+    [
+      0.0,
+      -2.65,
+      0.0
+    ],
+    [
+      6.0,
+      2.65,
+      3.5
+    ]
+  ],
+  "target_m": [
+    [
+      0.5,
+      -2.4,
+      0.25
+    ],
+    [
+      5.5,
+      2.4,
+      3.25
+    ]
+  ],
+  "source_solids": [],
+  "mounting": {
+    "axial_range": [
+      0.2,
+      0.8
+    ],
+    "left_y": -2.57,
+    "right_y": 2.57,
+    "side_z_range": [
+      0.25,
+      3.25
+    ],
+    "roof_z": 3.38,
+    "roof_y_range": [
+      -2.4,
+      2.4
+    ],
+    "min_spacing": 0.3,
+    "clearance": 0.05,
+    "status": "ASSUMED_GEOMETRY",
+    "surface_meaning": "offset nozzle centres on hypothetical brackets, not literal wall penetration"
+  },
+  "inherited_input_sha256": {
+    "geometry/scene.json": "b64a3488d2dd1f624a2c4758c48ac2bf1b54a0f093a64afabde42c19b8d6e62d",
+    "configs/GG3_nominal.json": "6d18b1c2e4145a8a91d99c5d3358a9fb33eb6ccfd0c96ef4d3216e61953dcf68",
+    "configs/numerical.json": "8bc876bd9bd5daa5c0bf6346a6f58baed49011b5491497b745c3188250cc7cec",
+    "nozzle/GG3/GG3_lognormal_fit.json": "16b2882f50095b45dcc75556e28b492a11eeeb3ed2f5fcf9ccace2afc326bf40",
+    "geometry/L01_NT_DIAGNOSTIC.json": "fd3567ecd279773879fbb5951b247339acd0ecef3bd4ee658eb0ac870dc18fbd",
+    "nozzle/GG3/GG3_provenance.md": "f978533728193b2ce2b9315e7024c1459b02de5f862f99c8f9dfa3440ca49d47",
+    "nozzle/GG3/GG3_cross_validation_NIOSH.md": "12993665e1bece76d51e5827683e7cd6f8a8e76f7fe83111d246ceaf87de5e12"
+  },
+  "engine_sha256": {
+    "event_kernel.py": "15d1e4c437464a6f8018bceaa29359a12e5d67cc1e9e799aeb3746f1d0fd876b",
+    "inherited_kernels.py": "8c512b2188a05c4928eb848c6fb824db31fe4499fea202cadfce29eb5ce50f2b",
+    "protocol_model.py": "1bdfa8ef9110dff35b406e9d76d61e9df21c68aefca8499958c84273e46d8a48"
+  },
+  "layout_sha256": "2e8c1a3262082c1309a713a17592d9c5e1dca8aa5f1f6f5df7fc5f1774410bb7",
+  "preregistration_sha256": "02f9e6beba19662c845eec96325310a4e6178b72120e25e21831ea0ba75a298b",
+  "gate": {
+    "passed": true,
+    "all_rank_evaluations_event_complete": true,
+    "search_evaluator": "P0",
+    "terminal_evaluator": "P4",
+    "checks": [
+      {
+        "fidelity": "P0",
+        "rank_pass": true,
+        "cost_pass": true,
+        "search_pass": true,
+        "terminal_pass": false
+      },
+      {
+        "fidelity": "P1",
+        "rank_pass": true,
+        "cost_pass": true,
+        "search_pass": true,
+        "terminal_pass": false
+      },
+      {
+        "fidelity": "P2",
+        "rank_pass": true,
+        "cost_pass": true,
+        "search_pass": true,
+        "terminal_pass": false
+      },
+      {
+        "fidelity": "P3",
+        "rank_pass": true,
+        "cost_pass": true,
+        "search_pass": true,
+        "terminal_pass": true
+      },
+      {
+        "fidelity": "P4",
+        "rank_pass": true,
+        "cost_pass": true,
+        "search_pass": true,
+        "terminal_pass": true
+      }
+    ],
+    "costs": {
+      "P0": {
+        "median_wall_s": 1.2182986999999983,
+        "min_wall_s": 0.999687300000005,
+        "max_wall_s": 1.5310295000000025
+      },
+      "P1": {
+        "median_wall_s": 4.43476960000001,
+        "min_wall_s": 3.5916950000000156,
+        "max_wall_s": 5.53114810000001
+      },
+      "P2": {
+        "median_wall_s": 4.5062004000000115,
+        "min_wall_s": 3.6489308000000165,
+        "max_wall_s": 5.559299899999985
+      },
+      "P3": {
+        "median_wall_s": 9.79987214999997,
+        "min_wall_s": 7.9192977000000155,
+        "max_wall_s": 15.19310459999997
+      },
+      "P4": {
+        "median_wall_s": 9.740771399999971,
+        "min_wall_s": 7.892245100000082,
+        "max_wall_s": 14.397210599999994
+      },
+      "REF": {
+        "median_wall_s": 31.314366399999983,
+        "min_wall_s": 23.747745899999927,
+        "max_wall_s": 36.097093599999994
+      }
+    },
+    "primary_rank_metrics": [
+      {
+        "scope": "preselected_reference_12",
+        "candidate": "P0",
+        "reference": "REF",
+        "n": 12,
+        "spearman": 1.0,
+        "kendall_tau_b": 0.9999999999999998,
+        "top25_recall": 1.0,
+        "top3_overlap": 1.0,
+        "predicted_best_reference_rank": 1.0,
+        "predicted_best_id": "D02",
+        "reference_best_id": "D02",
+        "pairwise_accuracy": 1.0
+      },
+      {
+        "scope": "preselected_reference_12",
+        "candidate": "P1",
+        "reference": "REF",
+        "n": 12,
+        "spearman": 1.0,
+        "kendall_tau_b": 0.9999999999999998,
+        "top25_recall": 1.0,
+        "top3_overlap": 1.0,
+        "predicted_best_reference_rank": 1.0,
+        "predicted_best_id": "D02",
+        "reference_best_id": "D02",
+        "pairwise_accuracy": 1.0
+      },
+      {
+        "scope": "preselected_reference_12",
+        "candidate": "P2",
+        "reference": "REF",
+        "n": 12,
+        "spearman": 1.0,
+        "kendall_tau_b": 0.9999999999999998,
+        "top25_recall": 1.0,
+        "top3_overlap": 1.0,
+        "predicted_best_reference_rank": 1.0,
+        "predicted_best_id": "D02",
+        "reference_best_id": "D02",
+        "pairwise_accuracy": 1.0
+      },
+      {
+        "scope": "preselected_reference_12",
+        "candidate": "P3",
+        "reference": "REF",
+        "n": 12,
+        "spearman": 1.0,
+        "kendall_tau_b": 0.9999999999999998,
+        "top25_recall": 1.0,
+        "top3_overlap": 1.0,
+        "predicted_best_reference_rank": 1.0,
+        "predicted_best_id": "D02",
+        "reference_best_id": "D02",
+        "pairwise_accuracy": 1.0
+      },
+      {
+        "scope": "preselected_reference_12",
+        "candidate": "P4",
+        "reference": "REF",
+        "n": 12,
+        "spearman": 1.0,
+        "kendall_tau_b": 0.9999999999999998,
+        "top25_recall": 1.0,
+        "top3_overlap": 1.0,
+        "predicted_best_reference_rank": 1.0,
+        "predicted_best_id": "D02",
+        "reference_best_id": "D02",
+        "pairwise_accuracy": 1.0
+      }
+    ],
+    "scope": "Protocol gate uses only fixed diagnostic ranking, not repeat probes"
+  },
+  "LB0_final_exists": false,
+  "STEP5A_allowed": false,
+  "future_rule": "Do not silently modify this numerical/physical protocol in STEP5A; a future execution namespace may replace only stage budget/cache plumbing."
+}

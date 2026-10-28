@@ -1,0 +1,55 @@
+{
+  "id": "EMPTY",
+  "geometry_source": "assumed_parameterized_geometry_anchored_to_DSJ100_63_2x75",
+  "solid_geometry": [],
+  "domain": [
+    [
+      0.0,
+      -2.65,
+      0.0
+    ],
+    [
+      6.0,
+      2.65,
+      3.5
+    ]
+  ],
+  "target": [
+    [
+      0.5,
+      -2.4,
+      0.25
+    ],
+    [
+      5.5,
+      2.4,
+      3.25
+    ]
+  ],
+  "mounting": {
+    "axial_range": [
+      0.2,
+      0.8
+    ],
+    "left_y": -2.57,
+    "right_y": 2.57,
+    "side_z_range": [
+      0.25,
+      3.25
+    ],
+    "roof_z": 3.38,
+    "roof_y_range": [
+      -2.4,
+      2.4
+    ],
+    "min_spacing": 0.3,
+    "clearance": 0.05,
+    "status": "ASSUMED_GEOMETRY",
+    "surface_meaning": "offset nozzle centres on hypothetical brackets, not literal wall penetration"
+  },
+  "forbidden_mounting_regions": [],
+  "forbidden_note": "No separately assumed exclusion boxes; solids + clearance and mounting ranges provide restrictions. Service corridor is not removed from target.",
+  "moving_belt": false,
+  "belt_speed_background_mps": 2.0,
+  "confirmation_role": "PAIRED_C001_EMPTY_REFERENCE_ONLY"
+}

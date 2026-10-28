@@ -1,0 +1,78 @@
+{
+  "selected_utc": "2026-09-20T09:52:04.058073+00:00",
+  "candidate": {
+    "candidate_id": "C001",
+    "particle": [
+      2.5,
+      0.41257245851769075,
+      0.46806436971339827,
+      156.73822871889286,
+      -90.0,
+      2.5,
+      0.7405362335210961,
+      0.6767555227086018,
+      134.47702606054736,
+      -38.244114105140895,
+      2.5,
+      0.6336231992398504,
+      0.595714376282122,
+      -6.533000404664307,
+      -31.47680004596143,
+      2.5,
+      0.47042567174276795,
+      0.24266490093239168,
+      -159.18902353615064,
+      -77.47926841087025,
+      2.5,
+      0.5320399592947485,
+      0.018719674426076496,
+      106.50565786649304,
+      -48.45943246916144,
+      2.5,
+      0.429513799424849,
+      0.9489829103341446,
+      -42.29807424948581,
+      -80.86068306840616
+    ],
+    "particle_sha256": "f828d3dd0ce417a5c4768993b7dfa9fbbcfce5e0135fc5215d54522c136f0c65",
+    "P0_score": 0.27676388888888886,
+    "representative_evaluation_id": "R01_G32_P05",
+    "provenance": [
+      {
+        "run_id": "R01",
+        "within_run_rank": 1,
+        "evaluation_id": "R01_G32_P05",
+        "direct_P0": 0.27676388888888886,
+        "search_seed": 2026092501
+      }
+    ]
+  },
+  "selection_statistics": {
+    "candidate_id": "C001",
+    "P0_score": 0.27676388888888886,
+    "P4_mean": 0.20354709259259254,
+    "P4_SD": 0.0011517082244918249,
+    "P4_median": 0.2034545555555555,
+    "P4_min": 0.20244444444444445,
+    "P4_max": 0.20474227777777776,
+    "individual_values_json": "[0.20474227777777776, 0.20244444444444445, 0.2034545555555555]",
+    "contributing_runs": "R01"
+  },
+  "selection_rule": {
+    "mean": "highest 3-seed P4 mean",
+    "ties": [
+      "higher median",
+      "lower sample SD",
+      "lower frozen candidate ID"
+    ],
+    "absolute_numeric_tolerance": 1e-12,
+    "implementation": "Filter within tolerance of best mean, then within tolerance of best median, then SD; choose smallest ID",
+    "selection_rule_frozen_before_results": true,
+    "candidate_ID_frozen_after_selection_before_holdout": true,
+    "holdout_never_reselects": true
+  },
+  "candidate_pool_sha256": "9c0a9a830ac028cd66cc7179f341ff9d7bd34e451792578cfa9f17eac6a4d328",
+  "selection_raw_sha256": "91329baebf6fd42ddabade1d2e1727e350e610130798a7379b5231ad86b01775",
+  "holdout_results_seen": 0,
+  "permanent_selection": true
+}

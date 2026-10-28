@@ -1,0 +1,1300 @@
+{
+  "selected": {
+    "V1": [
+      {
+        "pair_id": "P13",
+        "nozzle_indices": [
+          0,
+          2
+        ]
+      },
+      {
+        "pair_id": "P16",
+        "nozzle_indices": [
+          0,
+          5
+        ]
+      },
+      {
+        "pair_id": "P12",
+        "nozzle_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "V2": [
+      {
+        "pair_id": "P25",
+        "nozzle_indices": [
+          1,
+          4
+        ]
+      },
+      {
+        "pair_id": "P45",
+        "nozzle_indices": [
+          3,
+          4
+        ]
+      },
+      {
+        "pair_id": "P24",
+        "nozzle_indices": [
+          1,
+          3
+        ]
+      }
+    ],
+    "V3": [
+      {
+        "pair_id": "P12",
+        "nozzle_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "pair_id": "P13",
+        "nozzle_indices": [
+          0,
+          2
+        ]
+      },
+      {
+        "pair_id": "P16",
+        "nozzle_indices": [
+          0,
+          5
+        ]
+      }
+    ],
+    "V4": [
+      {
+        "pair_id": "P12",
+        "nozzle_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "pair_id": "P13",
+        "nozzle_indices": [
+          0,
+          2
+        ]
+      },
+      {
+        "pair_id": "P15",
+        "nozzle_indices": [
+          0,
+          4
+        ]
+      }
+    ]
+  },
+  "full_rankings": [
+    {
+      "scene": "V1",
+      "pair_id": "P13",
+      "subset": [
+        0,
+        2
+      ],
+      "screening_scores": [
+        0.2676059973674844,
+        0.2647440320692334
+      ],
+      "median_best": 0.2661750147183589,
+      "best": 0.2676059973674844,
+      "run_ids": [
+        "StageA_V1_P13_O2026101101",
+        "StageA_V1_P13_O2026101102"
+      ],
+      "rank": 1,
+      "selected": true
+    },
+    {
+      "scene": "V1",
+      "pair_id": "P16",
+      "subset": [
+        0,
+        5
+      ],
+      "screening_scores": [
+        0.2655871198130377,
+        0.26303470174896637
+      ],
+      "median_best": 0.264310910781002,
+      "best": 0.2655871198130377,
+      "run_ids": [
+        "StageA_V1_P16_O2026101101",
+        "StageA_V1_P16_O2026101102"
+      ],
+      "rank": 2,
+      "selected": true
+    },
+    {
+      "scene": "V1",
+      "pair_id": "P12",
+      "subset": [
+        0,
+        1
+      ],
+      "screening_scores": [
+        0.2642463080983432,
+        0.2617048028859176
+      ],
+      "median_best": 0.26297555549213036,
+      "best": 0.2642463080983432,
+      "run_ids": [
+        "StageA_V1_P12_O2026101101",
+        "StageA_V1_P12_O2026101102"
+      ],
+      "rank": 3,
+      "selected": true
+    },
+    {
+      "scene": "V1",
+      "pair_id": "P25",
+      "subset": [
+        1,
+        4
+      ],
+      "screening_scores": [
+        0.2643869159945469,
+        0.2610971809026215
+      ],
+      "median_best": 0.2627420484485842,
+      "best": 0.2643869159945469,
+      "run_ids": [
+        "StageA_V1_P25_O2026101101",
+        "StageA_V1_P25_O2026101102"
+      ],
+      "rank": 4,
+      "selected": false
+    },
+    {
+      "scene": "V1",
+      "pair_id": "P35",
+      "subset": [
+        2,
+        4
+      ],
+      "screening_scores": [
+        0.26407443068492414,
+        0.2610971809026215
+      ],
+      "median_best": 0.26258580579377283,
+      "best": 0.26407443068492414,
+      "run_ids": [
+        "StageA_V1_P35_O2026101101",
+        "StageA_V1_P35_O2026101102"
+      ],
+      "rank": 5,
+      "selected": false
+    },
+    {
+      "scene": "V1",
+      "pair_id": "P56",
+      "subset": [
+        4,
+        5
+      ],
+      "screening_scores": [
+        0.2610971809026215,
+        0.2635798546520088
+      ],
+      "median_best": 0.26233851777731515,
+      "best": 0.2635798546520088,
+      "run_ids": [
+        "StageA_V1_P56_O2026101101",
+        "StageA_V1_P56_O2026101102"
+      ],
+      "rank": 6,
+      "selected": false
+    },
+    {
+      "scene": "V1",
+      "pair_id": "P15",
+      "subset": [
+        0,
+        4
+      ],
+      "screening_scores": [
+        0.2622578606109854,
+        0.26126626014895205
+      ],
+      "median_best": 0.26176206037996874,
+      "best": 0.2622578606109854,
+      "run_ids": [
+        "StageA_V1_P15_O2026101101",
+        "StageA_V1_P15_O2026101102"
+      ],
+      "rank": 7,
+      "selected": false
+    },
+    {
+      "scene": "V1",
+      "pair_id": "P45",
+      "subset": [
+        3,
+        4
+      ],
+      "screening_scores": [
+        0.2622654156621247,
+        0.2610971809026215
+      ],
+      "median_best": 0.2616812982823731,
+      "best": 0.2622654156621247,
+      "run_ids": [
+        "StageA_V1_P45_O2026101101",
+        "StageA_V1_P45_O2026101102"
+      ],
+      "rank": 8,
+      "selected": false
+    },
+    {
+      "scene": "V1",
+      "pair_id": "P36",
+      "subset": [
+        2,
+        5
+      ],
+      "screening_scores": [
+        0.2620743008499712,
+        0.2610971809026215
+      ],
+      "median_best": 0.2615857408762964,
+      "best": 0.2620743008499712,
+      "run_ids": [
+        "StageA_V1_P36_O2026101101",
+        "StageA_V1_P36_O2026101102"
+      ],
+      "rank": 9,
+      "selected": false
+    },
+    {
+      "scene": "V1",
+      "pair_id": "P26",
+      "subset": [
+        1,
+        5
+      ],
+      "screening_scores": [
+        0.2610971809026215,
+        0.26158035440465083
+      ],
+      "median_best": 0.2613387676536362,
+      "best": 0.26158035440465083,
+      "run_ids": [
+        "StageA_V1_P26_O2026101101",
+        "StageA_V1_P26_O2026101102"
+      ],
+      "rank": 10,
+      "selected": false
+    },
+    {
+      "scene": "V1",
+      "pair_id": "P14",
+      "subset": [
+        0,
+        3
+      ],
+      "screening_scores": [
+        0.2610971809026215,
+        0.2610971809026215
+      ],
+      "median_best": 0.2610971809026215,
+      "best": 0.2610971809026215,
+      "run_ids": [
+        "StageA_V1_P14_O2026101101",
+        "StageA_V1_P14_O2026101102"
+      ],
+      "rank": 11,
+      "selected": false
+    },
+    {
+      "scene": "V1",
+      "pair_id": "P23",
+      "subset": [
+        1,
+        2
+      ],
+      "screening_scores": [
+        0.2610971809026215,
+        0.2610971809026215
+      ],
+      "median_best": 0.2610971809026215,
+      "best": 0.2610971809026215,
+      "run_ids": [
+        "StageA_V1_P23_O2026101101",
+        "StageA_V1_P23_O2026101102"
+      ],
+      "rank": 12,
+      "selected": false
+    },
+    {
+      "scene": "V1",
+      "pair_id": "P24",
+      "subset": [
+        1,
+        3
+      ],
+      "screening_scores": [
+        0.2610971809026215,
+        0.2610971809026215
+      ],
+      "median_best": 0.2610971809026215,
+      "best": 0.2610971809026215,
+      "run_ids": [
+        "StageA_V1_P24_O2026101101",
+        "StageA_V1_P24_O2026101102"
+      ],
+      "rank": 13,
+      "selected": false
+    },
+    {
+      "scene": "V1",
+      "pair_id": "P34",
+      "subset": [
+        2,
+        3
+      ],
+      "screening_scores": [
+        0.2610971809026215,
+        0.2610971809026215
+      ],
+      "median_best": 0.2610971809026215,
+      "best": 0.2610971809026215,
+      "run_ids": [
+        "StageA_V1_P34_O2026101101",
+        "StageA_V1_P34_O2026101102"
+      ],
+      "rank": 14,
+      "selected": false
+    },
+    {
+      "scene": "V1",
+      "pair_id": "P46",
+      "subset": [
+        3,
+        5
+      ],
+      "screening_scores": [
+        0.2610971809026215,
+        0.2610971809026215
+      ],
+      "median_best": 0.2610971809026215,
+      "best": 0.2610971809026215,
+      "run_ids": [
+        "StageA_V1_P46_O2026101101",
+        "StageA_V1_P46_O2026101102"
+      ],
+      "rank": 15,
+      "selected": false
+    },
+    {
+      "scene": "V2",
+      "pair_id": "P25",
+      "subset": [
+        1,
+        4
+      ],
+      "screening_scores": [
+        0.26398873681783475,
+        0.26305974534440957
+      ],
+      "median_best": 0.26352424108112216,
+      "best": 0.26398873681783475,
+      "run_ids": [
+        "StageA_V2_P25_O2026101101",
+        "StageA_V2_P25_O2026101102"
+      ],
+      "rank": 1,
+      "selected": true
+    },
+    {
+      "scene": "V2",
+      "pair_id": "P45",
+      "subset": [
+        3,
+        4
+      ],
+      "screening_scores": [
+        0.26473836578087895,
+        0.259798481602611
+      ],
+      "median_best": 0.26226842369174497,
+      "best": 0.26473836578087895,
+      "run_ids": [
+        "StageA_V2_P45_O2026101101",
+        "StageA_V2_P45_O2026101102"
+      ],
+      "rank": 2,
+      "selected": true
+    },
+    {
+      "scene": "V2",
+      "pair_id": "P24",
+      "subset": [
+        1,
+        3
+      ],
+      "screening_scores": [
+        0.25999015604818215,
+        0.26322721564466417
+      ],
+      "median_best": 0.26160868584642316,
+      "best": 0.26322721564466417,
+      "run_ids": [
+        "StageA_V2_P24_O2026101101",
+        "StageA_V2_P24_O2026101102"
+      ],
+      "rank": 3,
+      "selected": true
+    },
+    {
+      "scene": "V2",
+      "pair_id": "P12",
+      "subset": [
+        0,
+        1
+      ],
+      "screening_scores": [
+        0.26085674839553097,
+        0.2614650699205992
+      ],
+      "median_best": 0.2611609091580651,
+      "best": 0.2614650699205992,
+      "run_ids": [
+        "StageA_V2_P12_O2026101101",
+        "StageA_V2_P12_O2026101102"
+      ],
+      "rank": 4,
+      "selected": false
+    },
+    {
+      "scene": "V2",
+      "pair_id": "P26",
+      "subset": [
+        1,
+        5
+      ],
+      "screening_scores": [
+        0.2590387792380479,
+        0.2628477841874458
+      ],
+      "median_best": 0.26094328171274683,
+      "best": 0.2628477841874458,
+      "run_ids": [
+        "StageA_V2_P26_O2026101101",
+        "StageA_V2_P26_O2026101102"
+      ],
+      "rank": 5,
+      "selected": false
+    },
+    {
+      "scene": "V2",
+      "pair_id": "P56",
+      "subset": [
+        4,
+        5
+      ],
+      "screening_scores": [
+        0.2590387792380479,
+        0.2610835398380644
+      ],
+      "median_best": 0.2600611595380562,
+      "best": 0.2610835398380644,
+      "run_ids": [
+        "StageA_V2_P56_O2026101101",
+        "StageA_V2_P56_O2026101102"
+      ],
+      "rank": 6,
+      "selected": false
+    },
+    {
+      "scene": "V2",
+      "pair_id": "P35",
+      "subset": [
+        2,
+        4
+      ],
+      "screening_scores": [
+        0.2609545443352786,
+        0.2590387792380479
+      ],
+      "median_best": 0.25999666178666325,
+      "best": 0.2609545443352786,
+      "run_ids": [
+        "StageA_V2_P35_O2026101101",
+        "StageA_V2_P35_O2026101102"
+      ],
+      "rank": 7,
+      "selected": false
+    },
+    {
+      "scene": "V2",
+      "pair_id": "P16",
+      "subset": [
+        0,
+        5
+      ],
+      "screening_scores": [
+        0.26008837171299315,
+        0.25989816630514356
+      ],
+      "median_best": 0.2599932690090684,
+      "best": 0.26008837171299315,
+      "run_ids": [
+        "StageA_V2_P16_O2026101101",
+        "StageA_V2_P16_O2026101102"
+      ],
+      "rank": 8,
+      "selected": false
+    },
+    {
+      "scene": "V2",
+      "pair_id": "P15",
+      "subset": [
+        0,
+        4
+      ],
+      "screening_scores": [
+        0.2590387792380479,
+        0.26018350939400653
+      ],
+      "median_best": 0.2596111443160272,
+      "best": 0.26018350939400653,
+      "run_ids": [
+        "StageA_V2_P15_O2026101101",
+        "StageA_V2_P15_O2026101102"
+      ],
+      "rank": 9,
+      "selected": false
+    },
+    {
+      "scene": "V2",
+      "pair_id": "P36",
+      "subset": [
+        2,
+        5
+      ],
+      "screening_scores": [
+        0.25982086693932,
+        0.2590387792380479
+      ],
+      "median_best": 0.25942982308868395,
+      "best": 0.25982086693932,
+      "run_ids": [
+        "StageA_V2_P36_O2026101101",
+        "StageA_V2_P36_O2026101102"
+      ],
+      "rank": 10,
+      "selected": false
+    },
+    {
+      "scene": "V2",
+      "pair_id": "P13",
+      "subset": [
+        0,
+        2
+      ],
+      "screening_scores": [
+        0.25954021078033046,
+        0.2590387792380479
+      ],
+      "median_best": 0.2592894950091892,
+      "best": 0.25954021078033046,
+      "run_ids": [
+        "StageA_V2_P13_O2026101101",
+        "StageA_V2_P13_O2026101102"
+      ],
+      "rank": 11,
+      "selected": false
+    },
+    {
+      "scene": "V2",
+      "pair_id": "P14",
+      "subset": [
+        0,
+        3
+      ],
+      "screening_scores": [
+        0.2590387792380479,
+        0.2592405970393154
+      ],
+      "median_best": 0.25913968813868166,
+      "best": 0.2592405970393154,
+      "run_ids": [
+        "StageA_V2_P14_O2026101101",
+        "StageA_V2_P14_O2026101102"
+      ],
+      "rank": 12,
+      "selected": false
+    },
+    {
+      "scene": "V2",
+      "pair_id": "P46",
+      "subset": [
+        3,
+        5
+      ],
+      "screening_scores": [
+        0.2590387792380479,
+        0.2591437105038716
+      ],
+      "median_best": 0.25909124487095975,
+      "best": 0.2591437105038716,
+      "run_ids": [
+        "StageA_V2_P46_O2026101101",
+        "StageA_V2_P46_O2026101102"
+      ],
+      "rank": 13,
+      "selected": false
+    },
+    {
+      "scene": "V2",
+      "pair_id": "P23",
+      "subset": [
+        1,
+        2
+      ],
+      "screening_scores": [
+        0.2590387792380479,
+        0.2590387792380479
+      ],
+      "median_best": 0.2590387792380479,
+      "best": 0.2590387792380479,
+      "run_ids": [
+        "StageA_V2_P23_O2026101101",
+        "StageA_V2_P23_O2026101102"
+      ],
+      "rank": 14,
+      "selected": false
+    },
+    {
+      "scene": "V2",
+      "pair_id": "P34",
+      "subset": [
+        2,
+        3
+      ],
+      "screening_scores": [
+        0.2590387792380479,
+        0.2590387792380479
+      ],
+      "median_best": 0.2590387792380479,
+      "best": 0.2590387792380479,
+      "run_ids": [
+        "StageA_V2_P34_O2026101101",
+        "StageA_V2_P34_O2026101102"
+      ],
+      "rank": 15,
+      "selected": false
+    },
+    {
+      "scene": "V3",
+      "pair_id": "P12",
+      "subset": [
+        0,
+        1
+      ],
+      "screening_scores": [
+        0.27737125073591795,
+        0.2731795964371498
+      ],
+      "median_best": 0.2752754235865339,
+      "best": 0.27737125073591795,
+      "run_ids": [
+        "StageA_V3_P12_O2026101101",
+        "StageA_V3_P12_O2026101102"
+      ],
+      "rank": 1,
+      "selected": true
+    },
+    {
+      "scene": "V3",
+      "pair_id": "P13",
+      "subset": [
+        0,
+        2
+      ],
+      "screening_scores": [
+        0.273104745467529,
+        0.2702926574976328
+      ],
+      "median_best": 0.2716987014825809,
+      "best": 0.273104745467529,
+      "run_ids": [
+        "StageA_V3_P13_O2026101101",
+        "StageA_V3_P13_O2026101102"
+      ],
+      "rank": 2,
+      "selected": true
+    },
+    {
+      "scene": "V3",
+      "pair_id": "P16",
+      "subset": [
+        0,
+        5
+      ],
+      "screening_scores": [
+        0.27034337427611416,
+        0.27247795603967584
+      ],
+      "median_best": 0.271410665157895,
+      "best": 0.27247795603967584,
+      "run_ids": [
+        "StageA_V3_P16_O2026101101",
+        "StageA_V3_P16_O2026101102"
+      ],
+      "rank": 3,
+      "selected": true
+    },
+    {
+      "scene": "V3",
+      "pair_id": "P26",
+      "subset": [
+        1,
+        5
+      ],
+      "screening_scores": [
+        0.2699337226143387,
+        0.2716790793358718
+      ],
+      "median_best": 0.2708064009751052,
+      "best": 0.2716790793358718,
+      "run_ids": [
+        "StageA_V3_P26_O2026101101",
+        "StageA_V3_P26_O2026101102"
+      ],
+      "rank": 4,
+      "selected": false
+    },
+    {
+      "scene": "V3",
+      "pair_id": "P25",
+      "subset": [
+        1,
+        4
+      ],
+      "screening_scores": [
+        0.2699547088675034,
+        0.2699337226143387
+      ],
+      "median_best": 0.26994421574092103,
+      "best": 0.2699547088675034,
+      "run_ids": [
+        "StageA_V3_P25_O2026101101",
+        "StageA_V3_P25_O2026101102"
+      ],
+      "rank": 5,
+      "selected": false
+    },
+    {
+      "scene": "V3",
+      "pair_id": "P14",
+      "subset": [
+        0,
+        3
+      ],
+      "screening_scores": [
+        0.2699337226143387,
+        0.2699337226143387
+      ],
+      "median_best": 0.2699337226143387,
+      "best": 0.2699337226143387,
+      "run_ids": [
+        "StageA_V3_P14_O2026101101",
+        "StageA_V3_P14_O2026101102"
+      ],
+      "rank": 6,
+      "selected": false
+    },
+    {
+      "scene": "V3",
+      "pair_id": "P15",
+      "subset": [
+        0,
+        4
+      ],
+      "screening_scores": [
+        0.2699337226143387,
+        0.2699337226143387
+      ],
+      "median_best": 0.2699337226143387,
+      "best": 0.2699337226143387,
+      "run_ids": [
+        "StageA_V3_P15_O2026101101",
+        "StageA_V3_P15_O2026101102"
+      ],
+      "rank": 7,
+      "selected": false
+    },
+    {
+      "scene": "V3",
+      "pair_id": "P23",
+      "subset": [
+        1,
+        2
+      ],
+      "screening_scores": [
+        0.2699337226143387,
+        0.2699337226143387
+      ],
+      "median_best": 0.2699337226143387,
+      "best": 0.2699337226143387,
+      "run_ids": [
+        "StageA_V3_P23_O2026101101",
+        "StageA_V3_P23_O2026101102"
+      ],
+      "rank": 8,
+      "selected": false
+    },
+    {
+      "scene": "V3",
+      "pair_id": "P24",
+      "subset": [
+        1,
+        3
+      ],
+      "screening_scores": [
+        0.2699337226143387,
+        0.2699337226143387
+      ],
+      "median_best": 0.2699337226143387,
+      "best": 0.2699337226143387,
+      "run_ids": [
+        "StageA_V3_P24_O2026101101",
+        "StageA_V3_P24_O2026101102"
+      ],
+      "rank": 9,
+      "selected": false
+    },
+    {
+      "scene": "V3",
+      "pair_id": "P34",
+      "subset": [
+        2,
+        3
+      ],
+      "screening_scores": [
+        0.2699337226143387,
+        0.2699337226143387
+      ],
+      "median_best": 0.2699337226143387,
+      "best": 0.2699337226143387,
+      "run_ids": [
+        "StageA_V3_P34_O2026101101",
+        "StageA_V3_P34_O2026101102"
+      ],
+      "rank": 10,
+      "selected": false
+    },
+    {
+      "scene": "V3",
+      "pair_id": "P35",
+      "subset": [
+        2,
+        4
+      ],
+      "screening_scores": [
+        0.2699337226143387,
+        0.2699337226143387
+      ],
+      "median_best": 0.2699337226143387,
+      "best": 0.2699337226143387,
+      "run_ids": [
+        "StageA_V3_P35_O2026101101",
+        "StageA_V3_P35_O2026101102"
+      ],
+      "rank": 11,
+      "selected": false
+    },
+    {
+      "scene": "V3",
+      "pair_id": "P36",
+      "subset": [
+        2,
+        5
+      ],
+      "screening_scores": [
+        0.2699337226143387,
+        0.2699337226143387
+      ],
+      "median_best": 0.2699337226143387,
+      "best": 0.2699337226143387,
+      "run_ids": [
+        "StageA_V3_P36_O2026101101",
+        "StageA_V3_P36_O2026101102"
+      ],
+      "rank": 12,
+      "selected": false
+    },
+    {
+      "scene": "V3",
+      "pair_id": "P45",
+      "subset": [
+        3,
+        4
+      ],
+      "screening_scores": [
+        0.2699337226143387,
+        0.2699337226143387
+      ],
+      "median_best": 0.2699337226143387,
+      "best": 0.2699337226143387,
+      "run_ids": [
+        "StageA_V3_P45_O2026101101",
+        "StageA_V3_P45_O2026101102"
+      ],
+      "rank": 13,
+      "selected": false
+    },
+    {
+      "scene": "V3",
+      "pair_id": "P46",
+      "subset": [
+        3,
+        5
+      ],
+      "screening_scores": [
+        0.2699337226143387,
+        0.2699337226143387
+      ],
+      "median_best": 0.2699337226143387,
+      "best": 0.2699337226143387,
+      "run_ids": [
+        "StageA_V3_P46_O2026101101",
+        "StageA_V3_P46_O2026101102"
+      ],
+      "rank": 14,
+      "selected": false
+    },
+    {
+      "scene": "V3",
+      "pair_id": "P56",
+      "subset": [
+        4,
+        5
+      ],
+      "screening_scores": [
+        0.2699337226143387,
+        0.2699337226143387
+      ],
+      "median_best": 0.2699337226143387,
+      "best": 0.2699337226143387,
+      "run_ids": [
+        "StageA_V3_P56_O2026101101",
+        "StageA_V3_P56_O2026101102"
+      ],
+      "rank": 15,
+      "selected": false
+    },
+    {
+      "scene": "V4",
+      "pair_id": "P12",
+      "subset": [
+        0,
+        1
+      ],
+      "screening_scores": [
+        0.2786831713754222,
+        0.27116155833282957
+      ],
+      "median_best": 0.2749223648541259,
+      "best": 0.2786831713754222,
+      "run_ids": [
+        "StageA_V4_P12_O2026101101",
+        "StageA_V4_P12_O2026101102"
+      ],
+      "rank": 1,
+      "selected": true
+    },
+    {
+      "scene": "V4",
+      "pair_id": "P13",
+      "subset": [
+        0,
+        2
+      ],
+      "screening_scores": [
+        0.2762013370761616,
+        0.27060080564826816
+      ],
+      "median_best": 0.2734010713622149,
+      "best": 0.2762013370761616,
+      "run_ids": [
+        "StageA_V4_P13_O2026101101",
+        "StageA_V4_P13_O2026101102"
+      ],
+      "rank": 2,
+      "selected": true
+    },
+    {
+      "scene": "V4",
+      "pair_id": "P15",
+      "subset": [
+        0,
+        4
+      ],
+      "screening_scores": [
+        0.2726068116341071,
+        0.2699093785606676
+      ],
+      "median_best": 0.27125809509738735,
+      "best": 0.2726068116341071,
+      "run_ids": [
+        "StageA_V4_P15_O2026101101",
+        "StageA_V4_P15_O2026101102"
+      ],
+      "rank": 3,
+      "selected": true
+    },
+    {
+      "scene": "V4",
+      "pair_id": "P45",
+      "subset": [
+        3,
+        4
+      ],
+      "screening_scores": [
+        0.2697386903682611,
+        0.27183032026701226
+      ],
+      "median_best": 0.27078450531763665,
+      "best": 0.27183032026701226,
+      "run_ids": [
+        "StageA_V4_P45_O2026101101",
+        "StageA_V4_P45_O2026101102"
+      ],
+      "rank": 4,
+      "selected": false
+    },
+    {
+      "scene": "V4",
+      "pair_id": "P35",
+      "subset": [
+        2,
+        4
+      ],
+      "screening_scores": [
+        0.2717295862518215,
+        0.2697386903682611
+      ],
+      "median_best": 0.2707341383100413,
+      "best": 0.2717295862518215,
+      "run_ids": [
+        "StageA_V4_P35_O2026101101",
+        "StageA_V4_P35_O2026101102"
+      ],
+      "rank": 5,
+      "selected": false
+    },
+    {
+      "scene": "V4",
+      "pair_id": "P25",
+      "subset": [
+        1,
+        4
+      ],
+      "screening_scores": [
+        0.2717167146832138,
+        0.2697386903682611
+      ],
+      "median_best": 0.2707277025257374,
+      "best": 0.2717167146832138,
+      "run_ids": [
+        "StageA_V4_P25_O2026101101",
+        "StageA_V4_P25_O2026101102"
+      ],
+      "rank": 6,
+      "selected": false
+    },
+    {
+      "scene": "V4",
+      "pair_id": "P24",
+      "subset": [
+        1,
+        3
+      ],
+      "screening_scores": [
+        0.2697386903682611,
+        0.27096288846953687
+      ],
+      "median_best": 0.270350789418899,
+      "best": 0.27096288846953687,
+      "run_ids": [
+        "StageA_V4_P24_O2026101101",
+        "StageA_V4_P24_O2026101102"
+      ],
+      "rank": 7,
+      "selected": false
+    },
+    {
+      "scene": "V4",
+      "pair_id": "P26",
+      "subset": [
+        1,
+        5
+      ],
+      "screening_scores": [
+        0.2697386903682611,
+        0.27092091596320744
+      ],
+      "median_best": 0.2703298031657343,
+      "best": 0.27092091596320744,
+      "run_ids": [
+        "StageA_V4_P26_O2026101101",
+        "StageA_V4_P26_O2026101102"
+      ],
+      "rank": 8,
+      "selected": false
+    },
+    {
+      "scene": "V4",
+      "pair_id": "P16",
+      "subset": [
+        0,
+        5
+      ],
+      "screening_scores": [
+        0.2701269360518086,
+        0.2705109844847231
+      ],
+      "median_best": 0.27031896026826585,
+      "best": 0.2705109844847231,
+      "run_ids": [
+        "StageA_V4_P16_O2026101101",
+        "StageA_V4_P16_O2026101102"
+      ],
+      "rank": 9,
+      "selected": false
+    },
+    {
+      "scene": "V4",
+      "pair_id": "P14",
+      "subset": [
+        0,
+        3
+      ],
+      "screening_scores": [
+        0.2697386903682611,
+        0.2697386903682611
+      ],
+      "median_best": 0.2697386903682611,
+      "best": 0.2697386903682611,
+      "run_ids": [
+        "StageA_V4_P14_O2026101101",
+        "StageA_V4_P14_O2026101102"
+      ],
+      "rank": 10,
+      "selected": false
+    },
+    {
+      "scene": "V4",
+      "pair_id": "P23",
+      "subset": [
+        1,
+        2
+      ],
+      "screening_scores": [
+        0.2697386903682611,
+        0.2697386903682611
+      ],
+      "median_best": 0.2697386903682611,
+      "best": 0.2697386903682611,
+      "run_ids": [
+        "StageA_V4_P23_O2026101101",
+        "StageA_V4_P23_O2026101102"
+      ],
+      "rank": 11,
+      "selected": false
+    },
+    {
+      "scene": "V4",
+      "pair_id": "P34",
+      "subset": [
+        2,
+        3
+      ],
+      "screening_scores": [
+        0.2697386903682611,
+        0.2697386903682611
+      ],
+      "median_best": 0.2697386903682611,
+      "best": 0.2697386903682611,
+      "run_ids": [
+        "StageA_V4_P34_O2026101101",
+        "StageA_V4_P34_O2026101102"
+      ],
+      "rank": 12,
+      "selected": false
+    },
+    {
+      "scene": "V4",
+      "pair_id": "P36",
+      "subset": [
+        2,
+        5
+      ],
+      "screening_scores": [
+        0.2697386903682611,
+        0.2697386903682611
+      ],
+      "median_best": 0.2697386903682611,
+      "best": 0.2697386903682611,
+      "run_ids": [
+        "StageA_V4_P36_O2026101101",
+        "StageA_V4_P36_O2026101102"
+      ],
+      "rank": 13,
+      "selected": false
+    },
+    {
+      "scene": "V4",
+      "pair_id": "P46",
+      "subset": [
+        3,
+        5
+      ],
+      "screening_scores": [
+        0.2697386903682611,
+        0.2697386903682611
+      ],
+      "median_best": 0.2697386903682611,
+      "best": 0.2697386903682611,
+      "run_ids": [
+        "StageA_V4_P46_O2026101101",
+        "StageA_V4_P46_O2026101102"
+      ],
+      "rank": 14,
+      "selected": false
+    },
+    {
+      "scene": "V4",
+      "pair_id": "P56",
+      "subset": [
+        4,
+        5
+      ],
+      "screening_scores": [
+        0.2697386903682611,
+        0.2697386903682611
+      ],
+      "median_best": 0.2697386903682611,
+      "best": 0.2697386903682611,
+      "run_ids": [
+        "StageA_V4_P56_O2026101101",
+        "StageA_V4_P56_O2026101102"
+      ],
+      "rank": 15,
+      "selected": false
+    }
+  ],
+  "frozen_utc": "2026-09-21T04:37:24.142725+00:00",
+  "before_StageB": true
+}
